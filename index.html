@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify ML Recommender</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Playlist Intelligence</h1>
+
+        <!-- Age Prediction Module -->
+        <div class="card">
+            <h2>Demographic Profiler</h2>
+            <p>Analyze track release dates to infer user age.</p>
+            <button id="btn-age">Predict Age</button>
+            <div id="age-result" class="result-box hidden"></div>
+        </div>
+
+        <!-- Recommendation Module -->
+        <div class="card">
+            <h2>Content-Based Recommender</h2>
+            <p>Enter a seed song from the dataset to find mathematical audio matches.</p>
+            <div class="input-group">
+                <input type="text" id="song-input" placeholder="e.g., Blinding Lights">
+                <button id="btn-recommend">Get Recommendations</button>
+            </div>
+            <div id="reco-result" class="result-box hidden"></div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
